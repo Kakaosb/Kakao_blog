@@ -1,0 +1,9 @@
+!!!
+%h1 Список гончаров
+.content
+	= @potterrs.each do |potterr|
+		= "Имя: " + potterr.name
+		%br
+		= "Копье(у.е.): #{potterr.spear}"
+		%br 
+		%br

@@ -1,0 +1,13 @@
+!!!
+
+%h1 Привет, гончары!
+.content
+	.row
+		.col-md-12
+			.button_wrap
+				= button_to "Создать нового гончара", render="/potterrs/new"
+			.button_wrap
+				= button_to "Список гончаров", render="/potterrs", :method => "get"
+			.button_wrap
+				= button_to "Варианты гончарных кругов", render="/", :method => "get"
+

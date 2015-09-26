@@ -1,0 +1,10 @@
+!!!
+%head
+	%title Potter
+	= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true 
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
+	= csrf_meta_tags 
+%body
+	#trailer.is_overlay
+		= video_tag([ "v.webm","v.mp4"], id: "video", width: "100%", height: "auto", autoplay: "autoplay", :loop => "loop", preload: "auto", :muted => "true")
+	= yield 

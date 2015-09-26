@@ -1,0 +1,29 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+h1
+		{color: white;}
+
+.button_wrap {
+	&:hover{
+		color: #ADD8E8;}
+    margin: 5% 20%;
+}
+
+.button_to{
+	display: inline-block;
+	float: left;
+}
+
+
+
+body {
+	
+	font-weight: normal;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialised;
+}
