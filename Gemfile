@@ -36,6 +36,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'haml', '~> 4.0.7'
 gem 'bootstrap-sass', '3.3.5.1'
+gem 'bootstrap_form', '2.2.0'
+
+gem 'materialize-sass'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

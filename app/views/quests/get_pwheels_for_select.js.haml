@@ -1,6 +1,0 @@
-- if @pwheels.blank?
-  == alert('У этого гончара пока нет кругов');
-  == $('#quest_pwheel_id').attr('disabled', 'disabled');
-- else
-  == var $element = $("#{j render('quests/form_pwheels_for_select_ajax')}");
-  == $('#quest_pwheel_id').empty().append($element).removeAttr('disabled');

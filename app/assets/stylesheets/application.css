@@ -23,12 +23,9 @@ html {
 
 body {
   padding-top: 60px;
-  background-image: url(bg.jpg);
+  /*background-image: url(bg.jpg);*/
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
-  text-shadow: 0 0 6px #000;
-  color: white;
 }
 input {
 	color:black;
@@ -84,7 +81,7 @@ textarea {
  .content {z-index: 9999;
   display: block; 
   position: relative; 
-  background-image: url(bg.jpg);
+  /*background-image: url(bg.jpg);*/
    height: 700px; 
    width: 1000px; 
    background-size: cover;

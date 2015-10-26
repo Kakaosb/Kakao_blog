@@ -1,16 +1,10 @@
 Rails.application.routes.draw do
-  resources :potterrs
-  resources :pwheels
-  resources :quests
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'main#index'
-
-  post 'potterrs/new(.:format)' => 'potterrs#new'
-
-  get '/quests/get_pwheels_for_select', to: 'quests#get_pwheels_for_select', as: :get_pwheels_for_select
+  root 'main#main'
 
   # get '/potterrs(.:format)' => 'potterrs#index'
   
