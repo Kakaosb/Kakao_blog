@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
-
+	before_action :signed_in_user
+	
 	def change_pass
 	end
 
