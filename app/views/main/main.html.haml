@@ -1,21 +1,40 @@
 !!!
+.wrap-head
+	#head
+		.content 
+			.row
+				.col-md-12
+					.col-md-2
+						#logo.img-circle
+							= image_tag("ava.jpg", alt: "ava", class: "")
+					.col-md-3
+						#info.head 
+							%ul.unstyled
+								%li Бондаренко Ольга Сергеевна
+								%li г. Ставрополь
+								%li 24 года
+								%li 8-909-753-66-13
+					.col-md-3
+						#contacts.head Contacts
 
-.row
-	.col-md-12
-		.col-md-2
-			#logo.head Logo
-		.col-md-3
-			#info.head Info
-		.col-md-3
-			#contacts.head Contacts
+#mid
+	.content
+		.row
+			.col-md-12
+				.portfolio
+					%dl.dl-horizontal
+						%dt Образование
+						%dd описание 1
+						%dt Профессиональные навыки
+						%dd описание 2
+#hobby
+	.row
+		.col-md-12
+			#video
+				= video_tag([ "v.webm","v.mp4"], id: "video", width: "100%",  autoplay: "autoplay", :loop => "loop", preload: "auto", :muted => "true")
 
-.row
-	.portfolio
-		%dl.horizontal
-
-
-	.vk_comments
-	%script{type: "text/javascript"}
-		VK.Widgets.Comments("vk_comments", {limit: 10, width: "665", attach: "*"});
-
-
+#footer
+	.row
+		.col-md-12
+			.content
+				%p jkjjj

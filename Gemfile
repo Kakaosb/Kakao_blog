@@ -37,6 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml', '~> 4.0.7'
 gem 'bootstrap-sass', '3.3.5.1'
 gem 'bootstrap_form', '2.2.0'
+gem "twitter-bootstrap-rails"
 
 gem 'materialize-sass'
 

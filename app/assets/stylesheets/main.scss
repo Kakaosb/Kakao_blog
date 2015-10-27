@@ -13,13 +13,74 @@ body {
 	-webkit-font-smoothing: antialised;
 }
 
+.col-md-12, .col-md-2, .col-md-3 {
+	padding-left:0;
+}
+
+.wrap-head {
+	position: fixed;
+	z-index: 300;
+	width: 100%;
+}
+img{
+
+		height: 165px;
+		display: inline-block;
+		border-radius: 50%;
+		border: #1C1C1C 3px solid;
+	}
+.unstyled {
+	    list-style-type: none;
+}
+
+#head{
+	// position:fixed;
+	height: 100px;
+	background-color: black;
+	.content{
+		padding-top: 5px;
+	}
+}
 .head {
 	display: inline-block;
 
 }
 
-#logo{background-color: green}
-
-#info{background-color: blue}
+#info{color: white;
+font-size: 14px;}
 
 #contacts{background-color: red}
+
+#logo {
+	
+}
+
+#mid{
+	height: auto;
+    position: fixed;
+    z-index: 100;
+    left: 282px;
+    top: 183px;
+    
+}
+
+#hobby{
+	background-color: black;
+	position: inherit;
+    height: auto;
+    z-index: 200;
+    top: 300px;
+}
+
+#footer{
+	position: absolute;
+	background-color: blue;
+	color: white;
+	height: 100px;
+	.content{
+		height: 100px;
+		padding-top: 5px;
+	}
+	z-index: 100;
+	top: 300px;
+}
