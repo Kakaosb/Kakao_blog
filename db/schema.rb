@@ -11,33 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150925081507) do
+ActiveRecord::Schema.define(version: 20151027082612) do
 
-  create_table "potterrs", force: :cascade do |t|
-    t.string   "name"
-    t.float    "spear"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "admins", force: :cascade do |t|
+    t.string   "login"
+    t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
-
-  create_table "pwheels", force: :cascade do |t|
-    t.float    "spear_sum"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "potterr_id"
-    t.string   "title"
-  end
-
-  add_index "pwheels", ["potterr_id"], name: "index_pwheels_on_potterr_id"
-
-  create_table "quests", force: :cascade do |t|
-    t.string   "name"
-    t.text     "discription"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "pwheel_id"
-  end
-
-  add_index "quests", ["pwheel_id"], name: "index_quests_on_pwheel_id"
 
 end

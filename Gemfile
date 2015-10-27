@@ -39,6 +39,8 @@ gem 'bootstrap-sass', '3.3.5.1'
 gem 'bootstrap_form', '2.2.0'
 gem "twitter-bootstrap-rails"
 
+gem 'bcrypt-ruby', '3.1.5'
+
 gem 'materialize-sass'
 
 group :development, :test do
