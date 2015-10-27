@@ -1,7 +1,0 @@
-.container
-	.row
-		.col-md-3
-			= form_tag login_path, class: 'form-signin' do
-				= text_field_tag 'email', params[:email], placeholder: 'login', class: 'form-control', required: true, autofocus: true
-				= password_field_tag 'password', nil, placeholder: 'password', class: 'form-control', required: true
-				= button_tag 'login', class: 'btn btn-lg btn-primary btn-block'

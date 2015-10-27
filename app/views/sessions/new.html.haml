@@ -1,0 +1,9 @@
+.container
+
+	.row
+		.col-md-3.col-md-offset-3
+			%h1 Вход
+			= form_for(:session, url: sessions_path) do |f|
+				= f.text_field :login
+				= f.password_field :password 
+				= button_tag 'log in', class: 'btn btn-lg btn-primary btn-block'

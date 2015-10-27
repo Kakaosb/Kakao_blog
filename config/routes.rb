@@ -5,8 +5,11 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'main#main'
-  get '/login' => 'admin#login'
 
+  resources :sessions, only: [:new, :create, :destroy]
+
+  match '/login',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
   # get '/potterrs(.:format)' => 'potterrs#index'
   
   # Example of regular route:
