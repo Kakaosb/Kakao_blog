@@ -1,0 +1,2 @@
+module Blog::ArtsHelper
+end
