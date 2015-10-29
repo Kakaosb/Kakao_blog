@@ -9,11 +9,12 @@
 	%script{type: "text/javascript"}
 		VK.init({apiId: API_ID, onlyWidgets: true});
 	
-%body
-	.row
+%body.blog
+	#blog_head
+	.row.blog
 		.col-md-12
 			.nav-wrapper
-				%ul
+				%ul.unstyled
 					%li
 						=link_to 'Программирование', blog_programm_view_path, remote: :true
 					%li
@@ -22,10 +23,11 @@
 						=link_to 'Спорт', blog_sport_view_path, remote: :true
 					%li
 						=link_to 'Галлерея', remote: :true
-	.row
+					%li.right
+						=link_to 'Об авторе', root_url
 		.col-md-12
-			.content
+			.wrapper
 				#articles
-					/= render template: "shared/programms_show"	
+					
 	= yield 
 
