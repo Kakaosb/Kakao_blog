@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  namespace :blog do
+    resources :sports, only: [:new, :create, :edit, :update, :destroy]
+    resources :arts, only: [:new, :create, :edit, :update, :destroy]
+    resources :programms, only: [:new, :create, :edit, :update, :destroy]
+
+    get '/sport_view', to: 'sports#content'
+    get '/art_view', to: 'arts#content'
+    get '/programm_view', to: 'programms#content'
+  end
+    get '/blog' => 'blog#main'
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
