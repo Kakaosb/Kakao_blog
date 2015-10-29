@@ -7,15 +7,37 @@
 					.col-md-2
 						#logo.img-circle
 							= image_tag("ava.jpg", alt: "ava", class: "")
-					.col-md-3
+					.col-md-4
 						#info.head 
 							%ul.unstyled
 								%li Бондаренко Ольга Сергеевна
+								/{:onmouseover => "this.style.color='#"+rand(0xffffff).to_s(16)+"';", :onmouseout=> "this.style.color='#fff';"} 
 								%li г. Ставрополь
 								%li 24 года
-								%li 8-909-753-66-13
+								%li Программист (web, C#, assembler)
 					.col-md-3
-						#contacts.head Contacts
+						#contacts.head
+							%ul.unstyled
+								%li 
+									=link_to 'ВKонтакте', 'http://vk.com/sova_bos', :target => "_blank"
+								%li
+									#SkypeButton_Call_ssova_bos_1{:style => "height: 24px;"}
+										%script{:type => "text/javascript"}
+											Skype.ui({
+											"name": "dropdown",
+											"element": "SkypeButton_Call_ssova_bos_1",
+											"participants": ["ssova_bos"],
+											"imageSize": 24
+											});
+								%li sovabos@gmail.com
+								%li +7 (909) 753-66-13
+								
+					.col-md-3
+						#blog.head
+							=link_to 'Блог', blog_path
+							
+
+
 
 #mid
 	.content
@@ -42,3 +64,7 @@
 		.col-md-12
 			.content
 				%p jkjjj
+
+
+
+

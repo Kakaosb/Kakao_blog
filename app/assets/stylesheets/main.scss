@@ -13,9 +13,17 @@ body {
 	-webkit-font-smoothing: antialised;
 }
 
+a {color: #00D8FF;
+&:hover{
+	color: #FF00F3;
+	}}
+
 .col-md-12, .col-md-2, .col-md-3 {
 	padding-left:0;
 }
+li {&:hover{
+	// color: #FF00F3;
+	}}
 
 .wrap-head {
 	position: fixed;
@@ -43,13 +51,32 @@ img{
 }
 .head {
 	display: inline-block;
+	color: white;
+font-size: 14px;
 
 }
 
-#info{color: white;
-font-size: 14px;}
+#info{}
 
-#contacts{background-color: red}
+#contacts{
+	img{height: 24px;
+		margin-top: -10px !important;
+		margin-bottom: 0 !important;
+		margin-left: 0 !important;
+		padding: 0 !important;
+		vertical-align: 0 !important; }
+
+	#dropdown_SkypeButton_Call_ssova_bos_1{
+
+	width: 80px!important;
+	line-height: 30px!important;
+	}
+}
+
+#blog{padding-top: 60px;
+	a {color: white;
+font-size: 20px;}
+}
 
 #logo {
 	
