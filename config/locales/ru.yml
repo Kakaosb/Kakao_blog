@@ -1,2 +1,8 @@
 ru:
-  title: 'Заголовок'
+  shared:
+    arts_show:
+      art_title: 'Творческие потуги'
+    programms_show:
+      programm_title: 'Путь воина'
+    sports_show:
+      sport_title: 'This is SPAAAARTAAAAAA!'

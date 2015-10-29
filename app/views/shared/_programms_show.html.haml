@@ -1,0 +1,22 @@
+%p.notice
+  = notice
+
+%h1=t('.programm_title')
+
+.article_content
+  - @blog_programms.each do |blog_programm|
+    .wrapper
+      %h3= blog_programm.title
+      .articles_content
+        = blog_programm.content 
+      .articles_tags
+        = blog_programm.tags 
+      %span
+        = link_to t('.edit'), edit_blog_programm_path(blog_programm) 
+      %span
+        = link_to t('.destroy'), blog_programm, method: :delete, data: { confirm: 'are you shure' }
+
+%br
+
+%span
+  = link_to t('.new_programm'), new_blog_programm_path
