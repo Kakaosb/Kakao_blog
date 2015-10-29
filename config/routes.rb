@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   match '/login',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
+  get '/pass' => 'admin#change_pass' 
+  post '/pass' => 'admin#change_pass'
+
   # get '/potterrs(.:format)' => 'potterrs#index'
   
   # Example of regular route:
