@@ -11,12 +11,18 @@
 
 
 .blog{
+	
 	li{
 		display: inline-block;
+
 	}
 
 	.wrapper {
-	width: 1000px;
+	width: auto;
 	margin: 0 auto;
+	padding: 10px 10px 10px 10px
 }
 }
+
+.col-md-3.sidebar{
+    float: right;}

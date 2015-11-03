@@ -2,7 +2,39 @@ ru:
   shared:
     arts_show:
       art_title: 'Творческие потуги'
+      edit: 'Редактировать'
+      destroy: 'Удалить'
+      more: 'Читать далее'
+      new_art: 'Новая статья'
     programms_show:
       programm_title: 'Путь воина'
+      edit: 'Редактировать'
+      destroy: 'Удалить'
+      more: 'Читать далее'
+      new_programm: 'Новая статья'
     sports_show:
       sport_title: 'This is SPAAAARTAAAAAA!'
+      edit: 'Редактировать'
+      destroy: 'Удалить'
+      more: 'Читать далее'
+      new_sport: 'Новая статья'
+  blog:
+    arts:
+      show:
+        new_art: 'Создать статью'
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        back: 'Назад'
+    programms:
+      show:
+        new_art: 'Создать статью'
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        back: 'Назад'
+        arts:
+    sports:
+      show:
+        new_art: 'Создать статью'
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        back: 'Назад'

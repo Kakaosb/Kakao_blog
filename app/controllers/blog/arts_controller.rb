@@ -1,5 +1,6 @@
 class Blog::ArtsController < ApplicationController
   before_action :set_blog_art, only: [:show, :edit, :update, :destroy]
+  layout 'blog'
 
   def content
     @blog_arts = Blog::Art.all
@@ -20,6 +21,12 @@ class Blog::ArtsController < ApplicationController
   # GET /blog/arts/1
   # GET /blog/arts/1.json
   def show
+    @blog_art = Blog::Art.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @blog_art }
+    end
   end
 
   # GET /blog/arts/new
