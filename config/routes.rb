@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
 
-<<<<<<< HEAD
+
   mount RedactorRails::Engine => '/redactor_rails'
-=======
->>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
   namespace :blog do
     resources :sports, only: [:new, :create, :index, :show, :edit, :update, :destroy]
     resources :arts, only: [:new, :create, :index, :show, :edit, :update, :destroy]
@@ -12,12 +10,11 @@ Rails.application.routes.draw do
     get '/sport_view', to: 'sports#content'
     get '/art_view', to: 'arts#content'
     get '/programm_view', to: 'programms#content'
-  end
-    get '/blog' => 'blog#main'
-<<<<<<< HEAD
-    get 'blog/gallery' => 'blog#gallery'
-=======
->>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
+  
+    get '/' => 'blog#main'
+
+    get '/gallery' => 'blog#gallery'
+end
 
   
   # The priority is based upon order of creation: first created -> highest priority.
