@@ -1,6 +1,9 @@
 ru:
+<<<<<<< HEAD
   buttons: 
     save: 'Сохранить'
+=======
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
   shared:
     arts_show:
       art_title: 'Творческие потуги'
@@ -27,6 +30,7 @@ ru:
         edit: 'Редактировать'
         destroy: 'Удалить'
         back: 'Назад'
+<<<<<<< HEAD
       index:
         edit: 'Редактировать'
         destroy: 'Удалить'
@@ -39,12 +43,15 @@ ru:
       new:
         new_art: 'Новая статья'
         back: 'Назад'
+=======
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
     programms:
       show:
         new_art: 'Создать статью'
         edit: 'Редактировать'
         destroy: 'Удалить'
         back: 'Назад'
+<<<<<<< HEAD
       index:
         edit: 'Редактировать'
         destroy: 'Удалить'
@@ -57,11 +64,15 @@ ru:
       new:
         new_programm: 'Новая статья'
         back: 'Назад'
+=======
+        arts:
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
     sports:
       show:
         new_art: 'Создать статью'
         edit: 'Редактировать'
         destroy: 'Удалить'
+<<<<<<< HEAD
         back: 'Назад'
       index:
         edit: 'Редактировать'
@@ -74,4 +85,6 @@ ru:
         back: 'Назад'
       new:
         new_sport: 'Новая статья'
+=======
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
         back: 'Назад'

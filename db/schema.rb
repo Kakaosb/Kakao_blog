@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20151106112837) do
+=======
+ActiveRecord::Schema.define(version: 20151028104758) do
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
 
   create_table "admins", force: :cascade do |t|
     t.string   "login"
@@ -47,6 +51,7 @@ ActiveRecord::Schema.define(version: 20151106112837) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "redactor_assets", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "data_file_name",               null: false
@@ -64,4 +69,6 @@ ActiveRecord::Schema.define(version: 20151106112837) do
   add_index "redactor_assets", ["assetable_type", "assetable_id"], name: "idx_redactor_assetable"
   add_index "redactor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_redactor_assetable_type"
 
+=======
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
 end

@@ -2,13 +2,24 @@
 	%p.notice
 		= notice
 
+<<<<<<< HEAD
+=======
+	- if signed_in?
+		%span
+			= link_to t('.new_art'), new_blog_art_path
+
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
 	%br
 
 	.article_content
 		.wrapper_a
 			%h3= @blog_art.title
 			.articles_content
+<<<<<<< HEAD
 				= @blog_art.content.html_safe
+=======
+				= @blog_art.content 
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
 			.articles_tags
 				= @blog_art.tags 
 			- if signed_in?
@@ -17,4 +28,8 @@
 				%span
 					= link_to t('.destroy'), @blog_art, method: :delete, data: { confirm: 'are you shure' }
 			%span
+<<<<<<< HEAD
 				= link_to t('.back'), blog_arts_path, class: 'btn'
+=======
+				= link_to t('.back'), blog_path, class: 'btn'
+>>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
