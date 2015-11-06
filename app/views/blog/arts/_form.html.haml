@@ -1,0 +1,17 @@
+.col-md-9
+  = bootstrap_form_for @blog_art do |f|
+    - if @blog_art.errors.any? 
+      #error_explanation
+        %h2="#{pluralize(@blog_art.errors.count, "error")} prohibited this blog_art from being saved:"
+        %ul
+          - @blog_art.errors.full_messages.each do |message|
+            %li= message
+
+    .field
+      = f.text_field :title
+    .field
+      = f.text_area :content, class: 'redactor'
+    .field
+      = f.text_field :tags
+    .form-actions
+      = f.submit t('buttons.save'), class: 'btn btn-primary'

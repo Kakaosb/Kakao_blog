@@ -1,8 +1,77 @@
 ru:
+  buttons: 
+    save: 'Сохранить'
   shared:
     arts_show:
       art_title: 'Творческие потуги'
+      edit: 'Редактировать'
+      destroy: 'Удалить'
+      more: 'Читать далее'
+      new_art: 'Новая статья'
     programms_show:
       programm_title: 'Путь воина'
+      edit: 'Редактировать'
+      destroy: 'Удалить'
+      more: 'Читать далее'
+      new_programm: 'Новая статья'
     sports_show:
       sport_title: 'This is SPAAAARTAAAAAA!'
+      edit: 'Редактировать'
+      destroy: 'Удалить'
+      more: 'Читать далее'
+      new_sport: 'Новая статья'
+  blog:
+    arts:
+      show:
+        new_art: 'Создать статью'
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        back: 'Назад'
+      index:
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        more: 'Читать далее'
+        new_art: 'Новая статья'
+        back: 'Назад'
+      edit:
+        edit_art: 'Редактирование'
+        back: 'Назад'
+      new:
+        new_art: 'Новая статья'
+        back: 'Назад'
+    programms:
+      show:
+        new_art: 'Создать статью'
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        back: 'Назад'
+      index:
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        more: 'Читать далее'
+        new_programm: 'Новая статья'
+        back: 'Назад'
+      edit:
+        edit_programm: 'Редактирование'
+        back: 'Назад'
+      new:
+        new_programm: 'Новая статья'
+        back: 'Назад'
+    sports:
+      show:
+        new_art: 'Создать статью'
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        back: 'Назад'
+      index:
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        more: 'Читать далее'
+        new_sport: 'Новая статья'
+        back: 'Назад'
+      edit:
+        edit_sport: 'Редактирование'
+        back: 'Назад'
+      new:
+        new_sport: 'Новая статья'
+        back: 'Назад'

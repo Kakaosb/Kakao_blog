@@ -1,6 +1,6 @@
 class Blog::SportsController < ApplicationController
   before_action :set_blog_sport, only: [:show, :edit, :update, :destroy]
-
+  layout 'blog'
  def content
     @blog_sports = Blog::Sport.all
     respond_to do |format|

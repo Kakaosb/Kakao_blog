@@ -13,9 +13,10 @@ body {
 	-webkit-font-smoothing: antialised;
 }
 
-a {color: #00D8FF;
+a {color: #00D8FF !important;
 &:hover{
-	color: #FF00F3;
+	color: #FF00F3!important;
+	background-color: transparent !important;
 	}}
 
 .col-md-12, .col-md-2, .col-md-3 {
@@ -23,7 +24,8 @@ a {color: #00D8FF;
 }
 li {&:hover{
 	// color: #FF00F3;
-	}}
+	}
+line-height: 22px; }
 
 .wrap-head {
 	position: fixed;
@@ -37,6 +39,11 @@ img{
 		border-radius: 50%;
 		border: #1C1C1C 3px solid;
 	}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
 .unstyled {
 	    list-style-type: none;
 }
@@ -45,9 +52,9 @@ img{
 	// position:fixed;
 	height: 100px;
 	background-color: black;
-	.content{
+
 		padding-top: 5px;
-	}
+	
 }
 .head {
 	display: inline-block;
@@ -71,9 +78,11 @@ font-size: 14px;
 	width: 80px!important;
 	line-height: 30px!important;
 	}
-}
+#SkypeButton_Call_ssova_bos_1{
+	    padding-top: 7px;
+}}
 
-#blog{padding-top: 60px;
+#blog{padding-top: 68px;
 	a {color: white;
 font-size: 20px;}
 }

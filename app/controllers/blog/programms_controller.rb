@@ -1,6 +1,6 @@
 class Blog::ProgrammsController < ApplicationController
   before_action :set_blog_programm, only: [:show, :edit, :update, :destroy]
-
+  layout 'blog'
   def content
     @blog_programms = Blog::Programm.all
     respond_to do |format|

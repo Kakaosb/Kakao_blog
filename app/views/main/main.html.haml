@@ -1,7 +1,7 @@
 !!!
 .wrap-head
 	#head
-		.content 
+		.wrapper
 			.row
 				.col-md-12
 					.col-md-2
@@ -14,7 +14,7 @@
 								/{:onmouseover => "this.style.color='#"+rand(0xffffff).to_s(16)+"';", :onmouseout=> "this.style.color='#fff';"} 
 								%li г. Ставрополь
 								%li 24 года
-								%li Программист (web, C#, assembler)
+								%li Программист (RoR, C#, assembler)
 					.col-md-3
 						#contacts.head
 							%ul.unstyled
@@ -34,13 +34,14 @@
 								
 					.col-md-3
 						#blog.head
-							=link_to 'Блог', blog_path
+							%span
+								=link_to 'Блог', blog_path
 							
 
 
 
 #mid
-	.content
+	.wrapper
 		.row
 			.col-md-12
 				.portfolio
@@ -62,7 +63,7 @@
 #footer
 	.row
 		.col-md-12
-			.content
+			.wrapper
 				%p jkjjj
 
 

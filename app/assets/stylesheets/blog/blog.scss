@@ -1,0 +1,32 @@
+#blog_head{
+	height: 100px;
+	width: 100%;
+	background-image: image-url("b_blog.jpg");
+	  -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+
+
+.blog{
+	
+	li{
+		display: inline-block;
+
+	}
+
+	.wrapper {
+	width: auto;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px
+}
+}
+
+.col-md-3.sidebar{
+    float: right;}
+
+.wrap_form{
+	padding: 0 20px;
+}

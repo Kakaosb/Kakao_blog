@@ -1,47 +1,47 @@
 source 'https://rubygems.org'
 
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
-# Use sqlite3 as the database for Active Record
+gem 'rails', '4.1.7'
+gem 'mail', '~> 2.6.3'
 gem 'sqlite3'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
+gem 'has_scope'
+gem 'haml'
+gem 'html2haml'
+gem 'haml-rails'
+gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-sass', '~> 3.1.1.1'
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-gem 'coffee-script', '~> 2.4.1'
-gem 'coffee-script-source', '~> 1.9.1.1'
-
-# Use jquery as the JavaScript library
+gem 'jquery-cdn'
+gem 'jbuilder'
+gem 'bcrypt-ruby', '~> 3.1.5'
+gem 'capistrano', '~> 3.2.1'
+gem 'capistrano-rvm'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-bower'
+gem 'capistrano-sidekiq'
+gem 'puma'
+gem 'bootstrap_form'
+gem 'ancestry'
+gem 'enumerize'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'geocoder'
+gem 'active_link_to'
+gem 'handlebars_assets'
+gem 'autoprefixer-rails'
+gem 'cancancan', '~> 1.7'
+gem 'request_store'
+gem 'kaminari'
+gem 'sidekiq'
+gem 'russian'
+gem "seedbank"
+gem 'mysql2'
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'redactor-rails', '~> 0.5.0'
+
+gem "paperclip", "~> 4.2"
+gem 'paperclip-globalize3', '~> 2.2.0'
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-gem 'haml', '~> 4.0.7'
-gem 'bootstrap-sass', '3.3.5.1'
-gem 'bootstrap_form', '2.2.0'
-gem "twitter-bootstrap-rails"
-
-gem 'bcrypt-ruby', '3.1.5'
-
-gem 'materialize-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

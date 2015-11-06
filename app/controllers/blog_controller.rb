@@ -6,4 +6,6 @@ class BlogController < ApplicationController
 	@blog_sports = Blog::Sport.all
 	end
 
+	def gallery
+	end
 end

@@ -1,0 +1,34 @@
+.wrap_form
+  %p.notice
+    = notice
+
+  - if signed_in?
+    %span
+      = link_to t('.new_art'), new_blog_art_path
+  %span
+    = link_to t('.back'), blog_path, class: 'btn'
+
+  %br
+
+  .article_content
+    .row
+      .col-md-8
+        - @blog_arts.each do |blog_art|
+          .col-md-6
+            .wrapper_a
+              %h3= blog_art.title
+              .articles_content
+                =  truncate(blog_art.content.html_safe, :length => 50, :escape => false)
+              .articles_tags
+                = blog_art.tags 
+              - if signed_in?
+                %span
+                  = link_to t('.edit'), edit_blog_art_path(blog_art) 
+                %span
+                  = link_to t('.destroy'), blog_art, method: :delete, data: { confirm: 'are you shure' }
+              %span
+                = link_to t('.more'), blog_art_path(blog_art), class: 'btn'
+
+  
+
+

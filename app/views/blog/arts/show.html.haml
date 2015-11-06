@@ -1,0 +1,20 @@
+#show_article
+	%p.notice
+		= notice
+
+	%br
+
+	.article_content
+		.wrapper_a
+			%h3= @blog_art.title
+			.articles_content
+				= @blog_art.content.html_safe
+			.articles_tags
+				= @blog_art.tags 
+			- if signed_in?
+				%span
+					= link_to t('.edit'), edit_blog_art_path(@blog_art) 
+				%span
+					= link_to t('.destroy'), @blog_art, method: :delete, data: { confirm: 'are you shure' }
+			%span
+				= link_to t('.back'), blog_arts_path, class: 'btn'
