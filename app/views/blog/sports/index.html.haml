@@ -16,9 +16,9 @@
         - @blog_sports.each do |blog_sport|
           .col-md-6
             .wrapper_a
-              %h3= blog_sport.title
+              %h3= link_to blog_sport.title, blog_sport_path(blog_sport), class: 'btn'
               .articles_content
-                = truncate(blog_sport.content.html_safe,:length => 100, :escape => false)
+                = truncate(blog_sport.content.html_safe,:length => 300, :escape => false)
               .articles_tags
                 = blog_sport.tags 
               - if signed_in?

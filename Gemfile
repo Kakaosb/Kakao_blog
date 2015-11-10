@@ -37,11 +37,14 @@ gem 'russian'
 gem "seedbank"
 gem 'mysql2'
 gem 'jquery-rails'
-gem 'redactor-rails', '~> 0.5.0'
+
+gem 'redactor-rails'
 
 gem "paperclip", "~> 4.2"
 gem 'paperclip-globalize3', '~> 2.2.0'
 gem 'turbolinks'
+
+gem 'ckeditor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

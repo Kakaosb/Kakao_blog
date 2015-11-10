@@ -70,6 +70,9 @@ GEM
       mime-types (>= 1.16)
     celluloid (0.16.0)
       timers (~> 4.0.0)
+    ckeditor (4.1.4)
+      cocaine
+      orm_adapter (~> 0.5.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.7)
@@ -262,6 +265,7 @@ DEPENDENCIES
   capistrano-rvm
   capistrano-sidekiq
   carrierwave
+  ckeditor
   enumerize
   geocoder
   haml
@@ -280,7 +284,7 @@ DEPENDENCIES
   paperclip-globalize3 (~> 2.2.0)
   puma
   rails (= 4.1.7)
-  redactor-rails (~> 0.5.0)
+  redactor-rails
   request_store
   russian
   sass-rails (~> 4.0.3)

@@ -7,15 +7,13 @@ Rails.application.routes.draw do
     resources :arts, only: [:new, :create, :index, :show, :edit, :update, :destroy]
     resources :programms, only: [:new, :create, :index, :show, :edit, :update, :destroy]
 
-    get '/sport_view', to: 'sports#content'
-    get '/art_view', to: 'arts#content'
-    get '/programm_view', to: 'programms#content'
-  
-    get '/' => 'blog#main'
-
-    get '/gallery' => 'blog#gallery'
-end
-
+    # get '/sport_view', to: 'sports#content'
+    # get '/art_view', to: 'arts#content'
+    # get '/programm_view', to: 'programms#content'
+  end
+  get '/gallery' => 'blog#gallery'
+  get '/blog' => 'blog#main'
+ 
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

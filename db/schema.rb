@@ -11,49 +11,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20151106112837) do
-=======
-ActiveRecord::Schema.define(version: 20151028104758) do
->>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
+ActiveRecord::Schema.define(version: 20151110113443) do
 
-  create_table "admins", force: :cascade do |t|
-    t.string   "login"
-    t.string   "password_digest"
+  create_table "admins", force: true do |t|
+    t.string   "login",           limit: nil
+    t.string   "password_digest", limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "remember_token"
+    t.string   "remember_token",  limit: nil
   end
 
   add_index "admins", ["remember_token"], name: "index_admins_on_remember_token"
 
-  create_table "blog_arts", force: :cascade do |t|
-    t.string   "title"
+  create_table "blog_arts", force: true do |t|
+    t.string   "title",      limit: nil
     t.text     "content"
-    t.string   "tags"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "tags",       limit: nil
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
-  create_table "blog_programms", force: :cascade do |t|
-    t.string   "title"
+  create_table "blog_programms", force: true do |t|
+    t.string   "title",      limit: nil
     t.text     "content"
-    t.string   "tags"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "tags",       limit: nil
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
-  create_table "blog_sports", force: :cascade do |t|
-    t.string   "title"
+  create_table "blog_sports", force: true do |t|
+    t.string   "title",      limit: nil
     t.text     "content"
-    t.string   "tags"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "tags",       limit: nil
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
-<<<<<<< HEAD
-  create_table "redactor_assets", force: :cascade do |t|
-    t.integer  "user_id"
+  create_table "redactor_assets", force: true do |t|
+    t.integer  "admin_id"
     t.string   "data_file_name",               null: false
     t.string   "data_content_type"
     t.integer  "data_file_size"
@@ -69,6 +64,4 @@ ActiveRecord::Schema.define(version: 20151028104758) do
   add_index "redactor_assets", ["assetable_type", "assetable_id"], name: "idx_redactor_assetable"
   add_index "redactor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_redactor_assetable_type"
 
-=======
->>>>>>> 1f337a3a6545061a062b16243a2947805eb5ebe0
 end
