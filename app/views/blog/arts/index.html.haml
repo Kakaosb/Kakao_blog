@@ -16,9 +16,9 @@
         - @blog_arts.each do |blog_art|
           .col-md-6
             .wrapper_a
-              %h3= blog_art.title
+              %h3= link_to blog_art.title, blog_art_path(blog_art)
               .articles_content
-                =  truncate(blog_art.content.html_safe, :length => 50, :escape => false)
+                =  truncate(blog_art.content.html_safe, :length => 300, :escape => false)
               .articles_tags
                 = blog_art.tags 
               - if signed_in?

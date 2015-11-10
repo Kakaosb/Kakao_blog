@@ -16,7 +16,7 @@
         - @blog_sports.each do |blog_sport|
           .col-md-6
             .wrapper_a
-              %h3= link_to blog_sport.title, blog_sport_path(blog_sport), class: 'btn'
+              %h3= link_to blog_sport.title, blog_sport_path(blog_sport)
               .articles_content
                 = truncate(blog_sport.content.html_safe,:length => 300, :escape => false)
               .articles_tags
