@@ -1,3 +1,9 @@
 .col-md-9
 	.wrapper
 		#articles
+			= I18n.l Time.now
+			- if I18n.locale == I18n.default_locale 
+				= link_to "English", :locale=>'en'
+
+			- else
+				= link_to "Русский", :locale=>'ru'

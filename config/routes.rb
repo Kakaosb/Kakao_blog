@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 
   mount RedactorRails::Engine => '/redactor_rails'
+  scope "(:locale)", :locale => /en|ru/ do
+
   namespace :blog do
     resources :sports, only: [:new, :create, :index, :show, :edit, :update, :destroy]
     resources :arts, only: [:new, :create, :index, :show, :edit, :update, :destroy]
@@ -12,7 +14,7 @@ Rails.application.routes.draw do
     # get '/programm_view', to: 'programms#content'
   end
   get '/gallery' => 'blog#gallery'
-  get '/blog' => 'blog#main'
+  
  
   
   # The priority is based upon order of creation: first created -> highest priority.
@@ -27,6 +29,11 @@ Rails.application.routes.draw do
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   get '/pass' => 'admin#change_pass' 
   post '/pass' => 'admin#change_pass'
+end
+
+ get '/blog' => 'blog#main'
+
+get '/:locale' => 'blog#main'
 
   # get '/potterrs(.:format)' => 'potterrs#index'
   

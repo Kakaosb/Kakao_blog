@@ -20,4 +20,87 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  buttons: 
+    save: 'Save'
+  shared:
+    arts_show:
+      art_title: 'Творческие потуги'
+      edit: 'Edit'
+      destroy: 'Delete'
+      more: 'Read more'
+      new_art: 'New article'
+    programms_show:
+      programm_title: 'Путь воина'
+      edit: 'Edit'
+      destroy: 'Delete'
+      more: 'Read more'
+      new_programm: 'New article'
+    sports_show:
+      sport_title: 'This is SPAAAARTAAAAAA!'
+      edit: 'Edit'
+      destroy: 'Delete'
+      more: 'Read more'
+      new_sport: 'New article'
+  layouts:
+    blog:
+      progr_link: 'Programming'
+      art_link: 'Art'
+      sport_link: 'Sport'
+      gal_link: 'Gallery'
+      author_link: 'About author'
+  blog:
+    arts:
+      show:
+        new_art: 'New article'
+        edit: 'Edit'
+      	destroy: 'Delete'
+        back: 'Back'
+      index:
+        edit: 'Edit'
+        destroy: 'Delete'
+        more: 'Read more'
+        new_art: 'New article'
+        back: 'Back'
+      edit:
+        edit_art: 'Edit'
+        back: 'Back'
+      new:
+        new_art: 'New article'
+        back: 'Back'
+    programms:
+      show:
+        new_programm: 'New article'
+        edit: 'Edit'
+        destroy: 'Delete'
+        back: 'Back'
+      index:
+        edit: 'Edit'
+        destroy: 'Delete'
+        more: 'Read more'
+        new_art: 'New article'
+        back: 'Back'
+      edit:
+        edit_programm: 'Редактирование'
+        back: 'Назад'
+      new:
+        new_programm: 'Новая статья'
+        back: 'Назад'
+        arts:
+    sports:
+      show:
+        new_sport: 'Создать статью'
+        edit: 'Редактировать'
+        destroy: 'Удалить'
+        back: 'Назад'
+      index:
+        edit: 'Edit'
+        destroy: 'Delete'
+        more: 'Read more'
+        new_sport: 'New article'
+        back: 'Back'
+      edit:
+        edit_sport: 'Edit'
+        back: 'Back'
+      new:
+        new_sport: 'New article'
+        back: 'Back'

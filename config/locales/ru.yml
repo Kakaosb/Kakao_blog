@@ -20,6 +20,13 @@ ru:
       destroy: 'Удалить'
       more: 'Читать далее'
       new_sport: 'Новая статья'
+  layouts:
+    blog:
+      progr_link: 'Программирование'
+      art_link: 'Art'
+      sport_link: 'Спорт'
+      gal_link: 'Галерея'
+      author_link: 'Об авторе'
   blog:
     arts:
       show:
